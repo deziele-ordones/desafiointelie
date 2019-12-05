@@ -1,6 +1,3 @@
-# desafiointelie
-Proposta Sugerida
-
 Desafio Intelie
 
 Problema Proposto
