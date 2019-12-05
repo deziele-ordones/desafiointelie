@@ -52,7 +52,7 @@ Nesse cenário, estamos criando um túnel ssh reverso. Aqui, podemos iniciar um 
 
 
 
-
+f
 
 
 
