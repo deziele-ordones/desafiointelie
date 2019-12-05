@@ -44,7 +44,7 @@ Agora, quando o host azul abrir um navegador e acessar, http://localhost:8080 el
 Sintaxe de encaminhamento de porta local
 Esta sintaxe para criar um túnel de encaminhamento de porta ssh local é esta:
 
-- ssh -L <LPORT>:<RHOST>:<RPORT> <GATEWAY>
+- ssh -L # <LPORT>:<RHOST>:<RPORT> <GATEWAY> #
 
 Encaminhamento de porta SSH remota
 
