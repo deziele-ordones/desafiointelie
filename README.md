@@ -21,7 +21,7 @@ O encapsulamento SSH é um método de transporte de dados de rede arbitrários a
 Abaixo segue um exemplo de uma implementação de túnel SSH:
 
 ![alt text](https://github.com/deziele-ordones/desafiointelie/blob/master/ssh-local2.png "Exemple network infrastructure")
-a
+
 
 
 Na imagem acima, o host azul não pode alcançar, http://192.168.0.3 mas pode conectar via ssh para 192.168.0.2. O seguinte comando ssh executado no host azul permitirá que o host azul alcance o host vermelho.
@@ -30,6 +30,5 @@ Na imagem acima, o host azul não pode alcançar, http://192.168.0.3 mas pode co
 - ssh -L 8080:192.168.0.3:80 reduser@192.168.0.2
 
 Agora, o host azul pode abrir um navegador, acessar http://localhost:8080e ser apresentado à página da Web hospedada em 192.168.0.3.
-
 
 
