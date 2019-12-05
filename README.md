@@ -31,6 +31,6 @@ Na imagem acima, o host azul não pode alcançar, http://192.168.0.3 mas pode co
 
 Agora, o host azul pode abrir um navegador, acessar http://localhost:8080e ser apresentado à página da Web hospedada em 192.168.0.3.
 
-![alt text](https://github.com/deziele-ordones/desafiointelie/blob/master/ssh-local1.png" Exemple Network Infra")
+![alt text](https://github.com/deziele-ordones/desafiointelie/blob/master/ssh-local1.png "Exemple Network Infra")
 
 
