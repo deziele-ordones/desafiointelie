@@ -75,5 +75,4 @@ The autossh command is used to add persistence to your tunnels. His job is to ma
 Here is an autossh command that you can recognize.
 autossh -N -i /home/blueuser/.ssh/id_rsa -R 2222: localhost: 22 greenuser@192.168.0.3
 
-Now when your tunnel goes down, it will automatically try to reconnect and keep trying until it succeeds. To make it persistent during a reboot, add the ssh command as a cron job.
-
+Now when your tunnel goes down, it will automatically try to reconnect and keep trying until it succeeds. To make it persistent during a reboot, add the ssh command as a cron job..
