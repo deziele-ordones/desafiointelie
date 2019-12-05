@@ -14,10 +14,10 @@ Notes and restrictions:
 
 # Solução Proposta
 
-A sugestão seria a criação de túneis SSH, o protocolo ssh pode encapsular outro tráfego entre dois hosts. O túnel ssh alcança redes e sistemas inacessíveis.
-O encapsulamento SSH é um método de transporte de dados de rede arbitrários através de uma conexão SSH criptografada. Pode ser usado para adicionar criptografia a aplicativos herdados. Também pode ser usado para implementar VPNs (redes privadas virtuais) e acessar serviços da intranet através de firewalls.
+The suggestion would be to create SSH tunnels, the ssh protocol can encapsulate other traffic between two hosts. The ssh tunnel reaches inaccessible networks and systems.
+SSH tunneling is a method of transporting arbitrary network data over an encrypted SSH connection. Can be used to add encryption to legacy applications. It can also be used to deploy virtual private networks (VPNs) and access intranet services through firewalls.
 
-Abaixo segue um exemplo de uma implementação de túnel SSH:
+Below is an example of an SSH tunnel implementation:
 
 ![alt text](https://github.com/deziele-ordones/desafiointelie/blob/master/ssh-local2.png "Exemple network infrastructure")
 
