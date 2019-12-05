@@ -2,15 +2,14 @@
 
 # Problema Proposto
 ![alt text](https://github.com/intelie/challenge-remote-access/raw/master/example%20network%20infrastructure.png "Example network infrastructure")
-A única conexão permitida entre o Cliente A e o Servidor A é via SSH. A única conexão permitida entre o Servidor A e o Servidor B é via SSH.
+The only allowed connection between Client A and Server A is via SSH. The only allowed connection between Server A and Server B is via SSH.
 
-Precisamos acessar, do Cliente A e usando HTTP, um serviço em execução na porta 8000 do Servidor B.
+We need to access, from Client A and using HTTP, a service running on port 8000 of Server B.
 
-Notas e restrições:
+Notes and restrictions:
 
-- Não há rota direta do Cliente A para o Servidor B e não há maneira prática de criar uma. Imagine o seguinte cenário como exemplo: O servidor B pertence a um datacenter interno do cliente e recebemos uma VPN que permite o acesso apenas à porta SSH do servidor A.
-- Há outro serviço em execução na porta 8000 do Servidor A, não devemos causar impactos neste.
-
+- There is no direct route from Client A to Server B and there is no practical way to create one. Imagine the following scenario as an example: Server B belongs to a client's internal datacenter and we receive a VPN that allows access only to server A's SSH port.
+- There is another service running on port 8000 of Server A, we should not impact this.
 
 
 # Solução Proposta
