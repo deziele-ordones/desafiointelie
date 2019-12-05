@@ -9,8 +9,7 @@ Precisamos acessar, do Cliente A e usando HTTP, um serviço em execução na por
 Notas e restrições:
 
 Não há rota direta do Cliente A para o Servidor B e não há maneira prática de criar uma. Imagine o seguinte cenário como exemplo: O servidor B pertence a um datacenter interno do cliente e recebemos uma VPN que permite o acesso apenas à porta SSH do servidor A.
-
-Há outro serviço em execução na porta 8000 do Servidor A, não devemos causar impactos neste
+Há outro serviço em execução na porta 8000 do Servidor A, não devemos causar impactos neste.
 
 
 
