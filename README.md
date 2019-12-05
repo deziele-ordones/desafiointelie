@@ -52,4 +52,29 @@ Nesse cenário, estamos criando um túnel ssh reverso. Aqui, podemos iniciar um 
 
 ![alt text](https://github.com/deziele-ordones/desafiointelie/blob/master/ssh-remote.png "infra")
 
+Estamos no host verde e queremos ssh no host azul. No entanto, o firewall bloqueia essa conexão diretamente. Como o host azul pode ssh para o host verde, podemos conectar usando isso e, quando o host verde deseja voltar ao host azul, ele pode percorrer esse túnel previamente estabelecido.
+
+O host azul inicia o túnel ssh assim:
+
+- ssh -R 2222:localhost:22 greenuser@192.168.0.2
+
+Isso abre a porta 2222 no host verde, que é o encaminhamento de porta para a porta 22 no host azul. Portanto, se o host verde fosse ssh para si mesmo na porta 2222, chegaria ao host azul.
+
+Agora, o host verde pode ssh para host azul como este:
+
+- ssh -p 2222 blueuser@localhost
+
+Usando a opção -N
+
+Ao usar o ssh, você pode especificar o -Nsinalizador que informa ao ssh que você não precisa enviar nenhum comando pela conexão ssh quando ela estiver estabelecida. Essa opção costuma ser usada ao criar túneis, pois muitas vezes não precisamos receber um prompt.
+
+Autossh
+O comando autossh é usado para adicionar persistência aos seus túneis. O trabalho que ele tem é verificar se sua conexão ssh está ativa e, se não estiver, crie-a.
+
+Aqui está um comando autossh que você pode reconhecer.
+autossh -N -i /home/blueuser/.ssh/id_rsa -R 2222:localhost:22 greenuser@192.168.0.3
+
+Agora, quando seu túnel desce, ele automaticamente tentará se reconectar e continuará tentando até obter êxito. Para torná-lo persistente durante uma reinicialização, adicione o comando ssh como um trabalho cron.
+
+
 
