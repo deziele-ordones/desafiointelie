@@ -46,7 +46,7 @@ Esta sintaxe para criar um túnel de encaminhamento de porta ssh local é esta:
 
 - ssh -L LPORT:RHOST:RPORT GATEWAY 
 
-Encaminhamento de porta SSH remota
+## Encaminhamento de porta SSH remota
 
 Nesse cenário, estamos criando um túnel ssh reverso. Aqui, podemos iniciar um túnel ssh em uma direção e usá-lo para criar um túnel ssh de volta para o outro lado. Isso pode ser útil para quando você solta um computador drone dentro de uma rede e deseja que ele “ligue para casa”. Então, quando ligar para casa, você poderá conectar-se a ele através do túnel ssh estabelecido.
 
@@ -64,11 +64,11 @@ Agora, o host verde pode ssh para host azul como este:
 
 - ssh -p 2222 blueuser@localhost
 
-Usando a opção -N
+## Usando a opção -N
 
 Ao usar o ssh, você pode especificar o -Nsinalizador que informa ao ssh que você não precisa enviar nenhum comando pela conexão ssh quando ela estiver estabelecida. Essa opção costuma ser usada ao criar túneis, pois muitas vezes não precisamos receber um prompt.
 
-Autossh
+## Autossh
 O comando autossh é usado para adicionar persistência aos seus túneis. O trabalho que ele tem é verificar se sua conexão ssh está ativa e, se não estiver, crie-a.
 
 Aqui está um comando autossh que você pode reconhecer.
