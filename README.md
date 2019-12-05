@@ -50,9 +50,6 @@ Encaminhamento de porta SSH remota
 
 Nesse cenário, estamos criando um túnel ssh reverso. Aqui, podemos iniciar um túnel ssh em uma direção e usá-lo para criar um túnel ssh de volta para o outro lado. Isso pode ser útil para quando você solta um computador drone dentro de uma rede e deseja que ele “ligue para casa”. Então, quando ligar para casa, você poderá conectar-se a ele através do túnel ssh estabelecido.
 
-
-
-f
-
+![alt text](https://github.com/deziele-ordones/desafiointelie/blob/master/ssh-remote.png "infra")
 
 
