@@ -10,12 +10,15 @@ Notas e restrições:
 •	Há outro serviço em execução na porta 8000 do Servidor A, não devemos causar impactos neste
 
 
-Solução Proposta
 
-![alt text](https://github.com/deziele-ordones/desafiointelie/blob/master/ssh-local2.png "Exemple network infrastructure")
+Solução Proposta
 
 A sugestão seria a criação de túneis SSH, o protocolo ssh pode encapsular outro tráfego entre dois hosts. O túnel ssh alcança redes e sistemas inacessíveis.
 O encapsulamento SSH é um método de transporte de dados de rede arbitrários através de uma conexão SSH criptografada. Pode ser usado para adicionar criptografia a aplicativos herdados. Também pode ser usado para implementar VPNs (redes privadas virtuais) e acessar serviços da intranet através de firewalls.
+
+![alt text](https://github.com/deziele-ordones/desafiointelie/blob/master/ssh-local2.png "Exemple network infrastructure")
+
+
 
 
 
